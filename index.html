@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FTH.Gallery - Portfolio Programmer & Photographer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="shell nav" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="FTH.Gallery">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M7 8 3 12l4 4M17 8l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </span>
+        <span>FTH.Gallery<small>Code, camera,</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#karya">Karya</a>
+        <a href="#profil">Profil</a>
+        <a href="#proses">Proses</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <div class="popup" id="welcomePopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" aria-hidden="true">
+      <div class="popup-box">
+        <button class="popup-close" type="button" id="closePopup" aria-label="Tutup popup">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <h2 id="popupTitle">Selamat datang di FTH.Gallery</h2>
+        <p>Jelajahi portfolio programmer dan fotografer: ada karya web, foto produk, street photography, sampai visual editorial.</p>
+        <div class="popup-actions">
+          <a class="btn primary" href="#karya" id="popupWork">Lihat Karya</a>
+          <button class="btn secondary" type="button" id="popupLater">Nanti dulu</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <span class="kicker"><span class="dot" aria-hidden="true"></span>Portfolio programmer + fotografer</span>
+          <h1>FTH.Gallery</h1>
+          <p>selamat datang di website portfolio saya</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#karya">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7h10v10H7zM4 4h4M16 4h4M4 16v4h4M20 16v4h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Lihat Karya
+            </a>
+            <a class="btn secondary" href="mailto:hello@lenscode.studio">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Kirim Brief
+            </a>
+          </div>
+        </div>
+
+        <div class="studio" aria-label="Ilustrasi meja kerja programmer dan fotografer">
+          <div class="device">
+            <div class="device-bar"><span></span><span></span><span></span></div>
+            <div class="code-window" aria-hidden="true">
+              <div><i>const</i> portfolio = {</div>
+              <div>&nbsp;&nbsp;role: <b>"front-end engineer"</b>,</div>
+              <div>&nbsp;&nbsp;camera: <b>"street & product"</b>,</div>
+              <div>&nbsp;&nbsp;focus: [<b>"UX"</b>, <b>"visual story"</b>],</div>
+              <div>&nbsp;&nbsp;deliver() {</div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;return buildBeautifulWork();</div>
+              <div>&nbsp;&nbsp;}</div>
+              <div>};</div>
+            </div>
+          </div>
+          <div class="camera-card">
+            <figure>
+              <svg viewBox="0 0 640 480" role="img" aria-label="Foto lanskap kota saat senja">
+                <defs>
+                  <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+                    <stop stop-color="#f2c66b"/>
+                    <stop offset=".48" stop-color="#de8062"/>
+                    <stop offset="1" stop-color="#24425f"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="480" fill="url(#sky)"/>
+                <circle cx="478" cy="132" r="54" fill="#fff3b0" opacity=".8"/>
+                <path d="M0 312c75-40 130-34 197 5 65 38 126 48 214 3 74-38 153-45 229 10v150H0z" fill="#1d3557"/>
+                <path d="M0 364h640v116H0z" fill="#101820"/>
+                <rect x="58" y="236" width="54" height="128" fill="#263d55"/>
+                <rect x="136" y="194" width="82" height="170" fill="#1b2c40"/>
+                <rect x="252" y="256" width="62" height="108" fill="#263d55"/>
+                <rect x="392" y="218" width="95" height="146" fill="#172536"/>
+                <g fill="#ffd166" opacity=".82">
+                  <rect x="76" y="256" width="9" height="11"/><rect x="96" y="279" width="9" height="11"/>
+                  <rect x="158" y="221" width="10" height="11"/><rect x="183" y="250" width="10" height="11"/>
+                  <rect x="414" y="246" width="12" height="12"/><rect x="454" y="282" width="12" height="12"/>
+                </g>
+              </svg>
+            </figure>
+            <div class="shot-caption">
+              <span>ISO 400 / f2.8</span>
+              <span>Jakarta, 18:12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="karya">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Hasil Karya</h2>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filter karya">
+          <button class="filter active" type="button" data-filter="all">Semua</button>
+          <button class="filter" type="button" data-filter="code">Programmer</button>
+          <button class="filter" type="button" data-filter="photo">Fotografer</button>
+        </div>
+
+        <div class="work-grid" aria-live="polite">
+          <article class="work-card" data-type="code">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Dashboard analitik produk">
+                <rect width="640" height="480" fill="#f8f1e2"/>
+                <rect x="48" y="54" width="544" height="372" rx="18" fill="#20242a"/>
+                <rect x="76" y="84" width="126" height="28" rx="8" fill="#67d8ef"/>
+                <rect x="76" y="146" width="170" height="248" rx="10" fill="#2c3440"/>
+                <rect x="276" y="146" width="236" height="92" rx="10" fill="#2c3440"/>
+                <rect x="276" y="270" width="236" height="124" rx="10" fill="#2c3440"/>
+                <path d="M300 352c34-68 77-84 117-46 22 20 43 26 72-31" fill="none" stroke="#ffd166" stroke-width="14" stroke-linecap="round"/>
+                <g fill="#2a9d8f"><rect x="102" y="346" width="26" height="48"/><rect x="142" y="308" width="26" height="86"/><rect x="182" y="266" width="26" height="128"/></g>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag">Web App</span>
+              <h3>Pulse Analytics</h3>
+              <p>Dashboard SaaS dengan visualisasi data, dark UI, dan komponen ringkas untuk tim produk.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-type="photo">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Foto produk kopi di meja studio">
+                <rect width="640" height="480" fill="#dfd2be"/>
+                <rect y="296" width="640" height="184" fill="#7d4f39"/>
+                <ellipse cx="320" cy="312" rx="216" ry="34" fill="#39251f" opacity=".28"/>
+                <rect x="240" y="132" width="160" height="210" rx="18" fill="#f7efe3" stroke="#171717" stroke-width="8"/>
+                <path d="M400 198c68-6 72 92 2 88" fill="none" stroke="#171717" stroke-width="16"/>
+                <rect x="268" y="172" width="104" height="90" rx="8" fill="#b84a36"/>
+                <path d="M204 352h232" stroke="#171717" stroke-width="10" stroke-linecap="round"/>
+                <circle cx="508" cy="118" r="64" fill="#fff2b8" opacity=".82"/>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag photo">Product Photo</span>
+              <h3>Roastery Story</h3>
+              <p>Seri foto produk untuk kedai kopi lokal dengan mood hangat, tekstur, dan cahaya natural.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-type="code">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Website editorial fotografi">
+                <rect width="640" height="480" fill="#e8f1ef"/>
+                <rect x="62" y="52" width="516" height="376" rx="16" fill="#fffaf0" stroke="#171717" stroke-width="7"/>
+                <rect x="92" y="92" width="222" height="276" rx="10" fill="#1d3557"/>
+                <path d="M92 306c60-58 108-60 163-18 34 26 58 29 59 29v51H92z" fill="#2a9d8f"/>
+                <circle cx="256" cy="140" r="38" fill="#ffd166"/>
+                <rect x="344" y="104" width="146" height="18" rx="7" fill="#171717"/>
+                <rect x="344" y="146" width="188" height="14" rx="7" fill="#7d8288"/>
+                <rect x="344" y="176" width="152" height="14" rx="7" fill="#7d8288"/>
+                <rect x="344" y="268" width="112" height="40" rx="8" fill="#b84a36"/>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag">Website</span>
+              <h3>Framefolio CMS</h3>
+              <p>Website editorial untuk fotografer dengan sistem koleksi, artikel, dan optimasi gambar.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-type="photo">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Foto street photography malam hari">
+                <rect width="640" height="480" fill="#101820"/>
+                <path d="M0 124h640v356H0z" fill="#172536"/>
+                <path d="M84 92h120v388H84zM274 142h86v338h-86zM438 74h116v406H438z" fill="#0c1118"/>
+                <g fill="#ffd166"><rect x="108" y="130" width="18" height="28"/><rect x="154" y="206" width="18" height="28"/><rect x="298" y="184" width="16" height="26"/><rect x="462" y="128" width="18" height="28"/><rect x="510" y="254" width="18" height="28"/></g>
+                <path d="M0 374c114-28 198-26 284 0 114 35 208 33 356-12v118H0z" fill="#1d3557"/>
+                <circle cx="326" cy="328" r="42" fill="#b84a36"/>
+                <path d="M326 370v80M286 452h80" stroke="#f8f1e2" stroke-width="12" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag photo">Street Photo</span>
+              <h3>Neon Crossing</h3>
+              <p>Foto jalanan malam hari yang mengejar ritme kota, pantulan cahaya, dan gestur spontan.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-type="code">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Aplikasi booking studio foto">
+                <rect width="640" height="480" fill="#f3d9ca"/>
+                <rect x="86" y="58" width="468" height="364" rx="26" fill="#fffaf0" stroke="#171717" stroke-width="8"/>
+                <rect x="126" y="106" width="154" height="26" rx="8" fill="#171717"/>
+                <rect x="126" y="166" width="388" height="64" rx="12" fill="#e9b44c"/>
+                <rect x="126" y="252" width="180" height="96" rx="12" fill="#1d3557"/>
+                <rect x="334" y="252" width="180" height="96" rx="12" fill="#2a9d8f"/>
+                <circle cx="454" cy="118" r="32" fill="#b84a36"/>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag">Product Design</span>
+              <h3>Studio Booking</h3>
+              <p>Prototype reservasi studio dengan kalender slot, pembayaran, dan detail paket pemotretan.</p>
+            </div>
+          </article>
+
+          <article class="work-card" data-type="photo">
+            <div class="thumb">
+              <svg viewBox="0 0 640 480" role="img" aria-label="Foto editorial potret kreatif">
+                <rect width="640" height="480" fill="#c9ded8"/>
+                <circle cx="320" cy="196" r="92" fill="#f2c59f"/>
+                <path d="M216 194c22-98 151-128 214-32 8-74-72-126-151-102-76 23-117 93-63 134z" fill="#171717"/>
+                <path d="M202 480c12-132 84-196 118-196s106 64 118 196z" fill="#1d3557"/>
+                <path d="M244 320c36 42 122 42 158 0" fill="none" stroke="#fffaf0" stroke-width="12" stroke-linecap="round"/>
+                <circle cx="286" cy="190" r="9" fill="#171717"/><circle cx="356" cy="190" r="9" fill="#171717"/>
+                <path d="M292 238c28 17 51 17 78 0" fill="none" stroke="#b84a36" stroke-width="8" stroke-linecap="round"/>
+                <rect x="68" y="76" width="126" height="176" rx="10" fill="#e9b44c" opacity=".72"/>
+                <rect x="462" y="112" width="92" height="138" rx="10" fill="#b84a36" opacity=".72"/>
+              </svg>
+            </div>
+            <div class="work-body">
+              <span class="tag photo">Portrait</span>
+              <h3>Editorial Faces</h3>
+              <p>Potret editorial dengan set warna terarah untuk kebutuhan profil kreator dan personal brand.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profil">
+      <div class="shell split">
+        <article class="profile">
+          <div class="avatar">
+            <svg viewBox="0 0 640 520" role="img" aria-label="Ilustrasi profil kreator memegang kamera">
+              <rect width="640" height="520" fill="#efe3d2"/>
+              <path d="M0 400c110-58 224-56 342-18 86 28 172 24 298-32v170H0z" fill="#2a9d8f"/>
+              <circle cx="322" cy="172" r="92" fill="#f2bd92"/>
+              <path d="M214 176c20-116 174-141 235-40-40-23-87-15-120-4-56 20-92 12-115 44z" fill="#171717"/>
+              <path d="M180 520c16-166 92-246 142-246s126 80 142 246z" fill="#1d3557"/>
+              <rect x="244" y="260" width="196" height="126" rx="18" fill="#20242a" stroke="#171717" stroke-width="9"/>
+              <circle cx="342" cy="323" r="42" fill="#67d8ef" stroke="#fffaf0" stroke-width="12"/>
+              <rect x="272" y="232" width="68" height="44" rx="10" fill="#20242a"/>
+            </svg>
+          </div>
+          <h2>Profil Singkat</h2>
+          <p>Fauzi adalah kreator digital fiktif untuk template ini: programmer front-end yang memahami sistem desain, sekaligus fotografer yang terbiasa menangkap detail produk, kota, dan manusia. Nama, email, dan karya bisa kamu ganti sesuai identitas asli.</p>
+          <div class="stats">
+            <div class="stat"><strong>24</strong><span>Proyek web</span></div>
+            <div class="stat"><strong>18</strong><span>Seri foto</span></div>
+            <div class="stat"><strong>7</strong><span>Brand lokal</span></div>
+            <div class="stat"><strong>4</strong><span>Tahun karya</span></div>
+          </div>
+        </article>
+
+        <div class="services" aria-label="Keahlian">
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Front-End Engineering</h3>
+            <p>Landing page, dashboard, komponen UI, animasi ringan, aksesibilitas, dan optimasi performa.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M5 7h3l2-2h4l2 2h3v14H5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="14" r="4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Commercial Photography</h3>
+            <p>Foto produk, profil, event kecil, dan visual brand yang siap dipakai untuk web maupun sosial media.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h10M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Content Systems</h3>
+            <p>Struktur CMS, halaman koleksi, katalog karya, dan template editorial yang mudah dikelola.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Visual Direction</h3>
+            <p>Palet warna, komposisi, ritme layout, dan moodboard agar produk digital terasa punya karakter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proses">
+      <div class="shell">
+        <div class="section-head">
+          <h2>Proses Kerja</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>01 / Brief</time>
+            <div>
+              <h3>Riset kebutuhan dan arah visual</h3>
+              <p>Mengumpulkan referensi, target audiens, kebutuhan teknis, serta gaya foto yang mendukung identitas proyek.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>02 / Build</time>
+            <div>
+              <h3>Desain antarmuka dan implementasi</h3>
+              <p>Membangun layout responsif, komponen, interaksi, dan struktur konten agar mudah dipakai berulang.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>03 / Shoot</time>
+            <div>
+              <h3>Produksi foto dan kurasi karya</h3>
+              <p>Menentukan shot list, mengambil gambar, memilih frame terbaik, lalu mengolah warna supaya konsisten dengan web.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>04 / Launch</time>
+            <div>
+              <h3>Finalisasi, optimasi, dan publikasi</h3>
+              <p>Memeriksa performa, aksesibilitas, responsivitas, serta memastikan setiap karya tampil jelas di berbagai layar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <div class="shell">
+        <div class="contact-band">
+          <div>
+            <h2>Mari bikin karya berikutnya.</h2>
+            <p>Butuh website portofolio, katalog foto, landing page produk, atau dokumentasi visual untuk brand? Kirim brief singkat dan kita mulai dari tujuan yang paling penting.</p>
+          </div>
+          <div class="contact-links">
+            <a class="btn" href="mailto:hello@lenscode.studio">Email</a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">&copy; 2026 FTH.Gallery.</div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
